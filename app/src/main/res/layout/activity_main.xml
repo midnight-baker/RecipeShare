@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_icon_image" />
+
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:layout_below="@id/imageView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/username"
+        android:autofillHints="Enter Username"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:autofillHints="Enter Password" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/allCapsLogin" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/don_t_have_an_account_register_here"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRegister"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:text="@string/allCapsOR"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearOR"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="3"
+        android:rowCount="1"
+        >
+        <!-- Row 1, Column 1 -->
+        <ImageButton
+            android:contentDescription="Sign in with Gmail Account"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/gmailIcon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <!-- Row 1, Column 2 -->
+        <ImageButton
+            android:contentDescription="Sign in with Microsoft Account"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/microsoftIcon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <!-- Row 1, Column 3 -->
+        <ImageButton
+            android:contentDescription="Sign in with Facebook Account"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/facebookIcon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent" />
+    </GridLayout>
+
+
+
+</RelativeLayout>

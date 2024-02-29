@@ -8,6 +8,7 @@ A recipe sharing app that allows users to share recipes with other users, add re
 - Change Password
 - Change Account Info (name, email, profile photo)
 - Delete Account (will delete profile data and all recipes from all lists)
+
 **Recipes:**
 - Add New Recipe
 - Store Recipe Drafts

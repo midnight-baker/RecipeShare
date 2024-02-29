@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_buttons">
+        <item
+            android:id="@+id/add_new_recipe"
+            android:title="@string/add_new_recipe" />
+        <item
+            android:id="@+id/my_favorites"
+            android:title="@string/my_favorites" />
+        <item
+            android:id="@+id/settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/app_specs"
+            android:title="@string/app_specifications" />
+    </group>
+</menu>

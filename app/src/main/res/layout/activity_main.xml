@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/login_background"
     tools:context=".MainActivity">
 
     <ImageView
@@ -19,46 +20,57 @@
         android:id="@+id/title_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
         android:text="@string/login"
-        android:layout_below="@id/imageView"
         android:textAlignment="center"
+        android:textColor="#F5DBDB"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextUsername"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/title_login"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="@string/username"
         android:autofillHints="Enter Username"
-        android:inputType="textEmailAddress" />
+        android:backgroundTint="#F5DBDB"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#C4F7AA" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextUsername"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:inputType="textPassword"
+        android:autofillHints="Enter Password"
+        android:backgroundTint="#F5DBDB"
         android:hint="@string/password"
-        android:autofillHints="Enter Password" />
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/allCapsLogin" />
+        android:text="@string/allCapsLogin"
+
+        android:textColorLink="#5FBE07" />
 
     <TextView
         android:id="@+id/textViewRegister"
@@ -68,13 +80,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="@string/don_t_have_an_account_register_here"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="#F5DBDB"
         android:textSize="16sp" />
 
 
     <LinearLayout
         android:id="@+id/linearOR"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewRegister"
         android:layout_gravity="center_horizontal"
@@ -83,28 +95,30 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
+        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
 
         <View
             android:id="@+id/divider1"
             android:layout_width="150dp"
             android:layout_height="2dp"
-            android:background="?android:attr/listDivider" />
+            android:background="@color/black" />
 
         <TextView
             android:id="@+id/textOR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="4dp"
+            android:paddingHorizontal="12dp"
             android:text="@string/allCapsOR"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
+            android:textColor="#F5DBDB"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <View
             android:id="@+id/divider2"
             android:layout_width="150dp"
             android:layout_height="2dp"
-            android:background="?android:attr/listDivider" />
+            android:background="@color/black" />
     </LinearLayout>
 
     <GridLayout
@@ -112,37 +126,46 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linearOR"
         android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:columnCount="3"
         android:rowCount="1"
         >
         <!-- Row 1, Column 1 -->
         <ImageButton
-            android:contentDescription="Sign in with Gmail Account"
+            android:contentDescription="@string/sign_in_with_gmail_account"
             android:layout_row="0"
             android:layout_column="0"
-            android:src="@drawable/gmailIcon"
-            android:scaleType="fitCenter"
+            android:src="@drawable/google_icon"
+            android:scaleType="centerInside"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
             android:background="@android:color/transparent"/>
 
         <!-- Row 1, Column 2 -->
         <ImageButton
-            android:contentDescription="Sign in with Microsoft Account"
+            android:contentDescription="@string/sign_in_with_microsoft_account"
             android:layout_row="0"
             android:layout_column="1"
-            android:src="@drawable/microsoftIcon"
+            android:src="@drawable/microsoft_icon"
             android:scaleType="fitCenter"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
             android:background="@android:color/transparent"/>
 
         <!-- Row 1, Column 3 -->
         <ImageButton
-            android:contentDescription="Sign in with Facebook Account"
+            android:contentDescription="@string/sign_in_with_facebook_account"
             android:layout_row="0"
             android:layout_column="2"
-            android:src="@drawable/facebookIcon"
+            android:src="@drawable/facebook_icon"
             android:scaleType="fitCenter"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_margin="10dp"
             android:background="@android:color/transparent" />
     </GridLayout>
-
 
 
 </RelativeLayout>

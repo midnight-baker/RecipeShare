@@ -7,4 +7,7 @@
     <string name="username">Username</string>
     <string name="allCapsOR">OR</string>
     <string name="app_icon_image">App Icon Image</string>
+    <string name="sign_in_with_gmail_account">Sign in with Gmail Account</string>
+    <string name="sign_in_with_microsoft_account">Sign in with Microsoft Account</string>
+    <string name="sign_in_with_facebook_account">Sign in with Facebook Account</string>
 </resources>

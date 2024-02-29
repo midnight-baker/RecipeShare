@@ -58,4 +58,7 @@
     <string name="last_name">Last Name</string>
     <string name="first_name">First Name</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_email">CONFIRM EMAIL</string>
+    <string name="please_enter_the_confirmation_code_that_was_sent_to_the_email_you_provided">Please enter the confirmation code that was sent to the email you provided:</string>
+    <string name="asterisk">*</string>
 </resources>

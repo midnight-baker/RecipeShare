@@ -8,6 +8,9 @@
             android:id="@+id/my_favorites"
             android:title="@string/my_favorites" />
         <item
+            android:id="@+id/my_lists"
+            android:title="@string/my_lists" />
+        <item
             android:id="@+id/settings"
             android:title="@string/settings" />
         <item

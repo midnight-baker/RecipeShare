@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:src="@drawable/ic_launcher_foreground"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/app_icon_image" />
 
     <TextView
@@ -78,12 +78,23 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewRegister"
+        android:id="@+id/textViewForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:text="@string/forgot_password_question"
+        android:textColor="#F5DBDB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/don_t_have_an_account_register_here"
         android:textColor="#F5DBDB"
         android:textSize="16sp" />

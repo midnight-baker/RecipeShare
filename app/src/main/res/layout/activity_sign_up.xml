@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/login_background"
+    tools:context=".sign_up">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_icon_image" />
+
+    <TextView
+        android:id="@+id/title_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/allCapsSign_up"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_sign_up"
+        android:id="@+id/first_last_name_row"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Enter First Name"
+            android:backgroundTint="#F5DBDB"
+            android:hint="@string/first_name"
+            android:textColorHint="#F5DBDB"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#C4F7AA" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:autofillHints="Enter Last Name"
+            android:backgroundTint="#F5DBDB"
+            android:hint="@string/last_name"
+            android:textColorHint="#F5DBDB"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#C4F7AA" />
+    </GridLayout>
+
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_last_name_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints="Enter Username"
+        android:backgroundTint="#F5DBDB"
+        android:hint="@string/username"
+        android:textColorHint="#F5DBDB"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#C4F7AA" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:id="@+id/password_row"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:autofillHints="Enter Password"
+            android:backgroundTint="#F5DBDB"
+            android:textColorHint="#F5DBDB"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="30dp"
+            android:autofillHints="Confirm Password"
+            android:backgroundTint="#F5DBDB"
+            android:textColorHint="#F5DBDB"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF5722"
+        android:radius="4dp"
+        android:shape="rectangle"
+        android:text="@string/allCapsSign_up"
+        android:textColorLink="#5FBE07"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/have_an_account_login_here"
+        android:textColor="#F5DBDB"
+        android:textSize="16sp" />
+</RelativeLayout>

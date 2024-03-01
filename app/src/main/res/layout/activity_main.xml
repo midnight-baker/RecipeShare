@@ -148,6 +148,7 @@
         >
         <!-- Row 1, Column 1 -->
         <ImageButton
+            android:id="@+id/imageSignInWithGoogle"
             android:contentDescription="@string/sign_in_with_gmail_account"
             android:layout_row="0"
             android:layout_column="0"
@@ -160,6 +161,7 @@
 
         <!-- Row 1, Column 2 -->
         <ImageButton
+            android:id="@+id/imageSignInWithMicrosoft"
             android:contentDescription="@string/sign_in_with_microsoft_account"
             android:layout_row="0"
             android:layout_column="1"
@@ -173,6 +175,7 @@
 
         <!-- Row 1, Column 3 -->
         <ImageButton
+            android:id="@+id/imageSignInWithFacebook"
             android:contentDescription="@string/sign_in_with_facebook_account"
             android:layout_row="0"
             android:layout_column="2"

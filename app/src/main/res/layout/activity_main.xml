@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center_horizontal"
     android:background="@drawable/login_background"
     tools:context=".MainActivity">
@@ -41,6 +42,7 @@
         android:backgroundTint="#F5DBDB"
         android:hint="@string/username"
         android:textColorHint="#F5DBDB"
+        android:drawableStart="@drawable/person_account"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textColor="#C4F7AA" />
@@ -56,10 +58,12 @@
         android:layout_marginEnd="20dp"
         android:autofillHints="Enter Password"
         android:backgroundTint="#F5DBDB"
-        android:textColorHint="#F5DBDB"
+        android:drawableStart="@drawable/password_lock"
+        android:drawableEnd="@drawable/password_visibility"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#F5DBDB" />
 
     <Button
         android:id="@+id/buttonLogin"
